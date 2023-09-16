@@ -1,6 +1,6 @@
-const fs =require("fs")
+import fs from "fs"
 
-class ProductManager{
+export default class ProductManager{
     constructor(path){
         this.path=path,
      this.products=[  
@@ -95,18 +95,18 @@ class ProductManager{
 
 }
 
-async function generator(){
+// async function generator(){
     
-const productmanager=new ProductManager("./files/products.json");
-// await productmanager.addProduct("product1","description1",1500,"url","abc123",500)
-// await productmanager.addProduct("product2","description2",1500,"url","abc122",500)
-// await productmanager.addProduct("product3","description2",1500,"url","abc125",500)
-// await productmanager.updateProduct(3,"zzzzz","xxxxxx",1500,"url","abc126",500)
-//await productmanager.deleteProduct(2)
-const solo=await productmanager.getProductbyId(1)
+// const productmanager=new ProductManager("./files/products.json");
+// // await productmanager.addProduct("product1","description1",1500,"url","abc123",500)
+// // await productmanager.addProduct("product2","description2",1500,"url","abc122",500)
+// // await productmanager.addProduct("product3","description2",1500,"url","abc125",500)
+// // await productmanager.updateProduct(3,"zzzzz","xxxxxx",1500,"url","abc126",500)
+// //await productmanager.deleteProduct(2)
+// const solo=await productmanager.getProductbyId(1)
 
-//  const listado=await productmanager.getProducts()
- console.log(solo)
-}
+// //  const listado=await productmanager.getProducts()
+//  console.log(solo)
+// }
 
-generator() ;
+// generator()
